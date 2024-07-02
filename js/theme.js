@@ -1,9 +1,7 @@
-const { animate, delay } = require("framer-motion");
-
 $('.page-scroll').bind('click', function(event) {
     var $anchor = $(this);
     $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top -64
+    scrollTop: $($anchor.attr('href')).offset().top -64
     }, 1500, 'easeInOutExpo');
     event.preventDefault();
 });
