@@ -141,7 +141,11 @@ section {
 	margin-bottom: 5px;
 	font-size: 90px;
 	text-transform: uppercase;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	/* text-shadow: 1px 1px 1px rgba(0,0,0,0.3); */
+	background-color: #000;
+    background-image: linear-gradient(to right, blue 5%, magenta 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #text-carousel-intro-section .caption p {
 	letter-spacing: 2px;
