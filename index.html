@@ -1,178 +1,669 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./img/pc-favicon.png" type="image/x-icon">
-    <title>"Tiny Titan"</title>
-</head>
-<body style="text-align: center;">
-    <h2>Was ist der Tiny Titan?</h2>
-    <p>Er ist eine Gruppe von Computern, die zusammenarbeiten.</p>
+<!doctype html>
+<html lang="en-US">
+	<head>
 
-    <h2>Was kann er?</h2>
-    <p>Er kann im Grunde vieles aber, was ihr gerade sieht, ist eine Physik Simulation.</p>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Tiny Titan</title>
+		<meta name="description" content="Unika - Responsive One Page HTML5 Template">
+		<meta name="keywords" content="HTML5, Bootsrtrap, One Page, Responsive, Template, Portfolio" />
 
-    <h2>Steuerung</h2>
-    <img src="./img/controller.png" alt="">
-    <p>
-        <li>
-            1: Ball Größer ↑, Ball Kleiner ↓
-        </li>            
-        <li>
-            2: ↑ und ↓ zum Auswählen und ↔ zum umstellen
-        </li>
-        <li>
-            3: Bewegen
-        </li>
-        <li>
-            5: Entfernt Barrieren
-        </li>
-        <li>
-            6: Kugelansicht und Wasseransicht wechseln
-        </li>
-        <li>
-            7: Controller an
-        </li>
-        <li>
-            9: Barrieren Ansicht an und aus
-        </li>
-        <li>
-            10: Fügt Barrieren hinzu
-        </li>
-        <li>
-            A: Gravity 0
-        </li>
-        <li>
-            B: Density 0 und Pressure 0 Elasticity 115
-        </li>
-        <li>
-            Y: Density 30 Elasticity -30
-        </li>
-        <li>
-            X: Standarteinstellung
-        </li>
-    </p>
- 
-    <h1>Erklärungen</h1>
- 
-    <h3>Gravity</h3>
-    <p>
-        (de. Gravitation) Die Kraft, die Gegenstände „herunterfallen“ lässt.
-        Hier sind es die Kugeln und die große Kugel.
-        <li>
-            1 oder mehr bedeutet, dass die Kugeln auf den Boden gedrückt werden
-        </li>
-        <li>
-            0 bedeutet, dass die Kugeln frei fliegen
-        </li>
-        <li>
-            -1 oder weniger bedeutet, dass die Kugeln auf die Decke gedrückt werden
-        </li>
-    </p>
- 
-    <h3>Viscosity</h3>
-    <p>
-        (de. Viskosität) drückt aus wie dick oder dünn flüssig die Kugeln oder das Wasser ist.
-        Density:
-        (de. Dichte) Beschreibt wie nah Moleküle beisammen stehen.
-        Je höher die Dichte desto näher sind sich die Moleküle (Moleküle sind ganz kleine teilchen)
-    </p>
- 
-    <h3>Pressure</h3>
-    <p>
-        (de. Druck) Stell dir vor, du hast einen Schuh in der Hand und drückst damit auf einen Luftballon. Je fester du drückst, desto mehr Luft entweicht aus dem Ballon. Das liegt daran, dass du mit deinem Schuh eine Kraft auf den Ballon ausübst. Diese Kraft verteilt sich auf die gesamte Fläche des Schuhs.
-        Druck ist die Kraft, die auf eine Fläche ausgeübt wird. Je kleiner die Fläche ist, desto größer ist der Druck, wenn die gleiche Kraft ausgeübt wird.
-    </p>
- 
-    <h3>Elasticity</h3>
-    <p>
-        (de. Elastizität) Wie weit sich die Kugeln oder das Wasser dehnen lassen
-    </p>
- 
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Google Fonts  -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'> <!-- Body font -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'> <!-- Navbar font -->
 
+		<!-- Libs and Plugins CSS -->
+		<link rel="stylesheet" href="inc/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="inc/animations/css/animate.min.css">
+		<link rel="stylesheet" href="inc/font-awesome/css/font-awesome.min.css"> <!-- Font Icons -->
+		<link rel="stylesheet" href="inc/owl-carousel/css/owl.carousel.css">
+		<link rel="stylesheet" href="inc/owl-carousel/css/owl.theme.css">
 
-    <h1>Tiny Titan und die 5 Säulen Wirtschaftsinformatik</h1>
-    <h2>Informatik:</h2>
-    <p>
-        <li>
-            Hochleistungsrechnen: Tiny Titan kann für rechenintensive Aufgaben eingesetzt werden, die auf einem einzelnen Raspberry Pi zu lange dauern würden.
-            Z. B. Simulationen, KI-Training oder Videobearbeitung.
-        </li>
-        <li>
-            Datenanalyse: Mit seiner parallelen Verarbeitungsleistung kann Tiny Titan große Datensätze schnell und effizient analysieren, um Muster und Trends zu erkennen.
-        </li>
-        <li>
-            Entwicklung und Testen von Software: Tiny Titan kann als Entwicklungsplattform für neue Softwareanwendungen verwendet werden. Die parallele Ausführung ermöglicht es, verschiedene Versionen einer Anwendung gleichzeitig zu testen.
-        </li>
-        <li>
-            Robotik und IoT: Tiny Titan kann als Steuerungszentrum für Roboter und IoT-Geräte eingesetzt werden. Seine Flexibilität ermöglicht die Anpassung an verschiedene Anwendungsfälle
-        </li>
-    </p>
+		<!-- Theme CSS -->
+        <link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/mobile.css">
 
-    <h2>Informationssysteme:</h2>
-    <p>
-        <li>
-            Speicherung und Verwaltung von Daten: Tiny Titan kann als dezentraler Datenspeicher verwendet werden, um sensible Daten sicher und redundant zu speichern.
-        </li>
-        <li>
-            Webserver und Cloud Computing: Tiny Titan kann als Webserver eingesetzt werden, um Websites und Anwendungen bereitzustellen. Er kann auch in Cloud-Computing-Umgebungen integriert werden.
-        </li>
-        <li>
-            Netzwerkmanagement und -überwachung: Tiny Titan kann zur Überwachung von Netzwerken und zur Identifizierung von Problemen eingesetzt werden.
-        </li>
-    </p>
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="css/skin/cool-gray.css">
+        <!-- <link rel="stylesheet" href="css/skin/ice-blue.css"> -->
+        <!-- <link rel="stylesheet" href="css/skin/summer-orange.css"> -->
+        <!-- <link rel="stylesheet" href="css/skin/fresh-lime.css"> -->
+        <!-- <link rel="stylesheet" href="css/skin/night-purple.css"> -->
 
-    <h2>Programmieren:</h2>
-    <p>
-        <li>
-            Lernen und Üben von Programmiersprachen: Tiny Titan bietet eine günstige und flexible Plattform zum Erlernen und Üben von Program-miersprachen wie Python, Java oder C++.
-        </li>
-        <li>
-            Entwicklung von parallelen Programmen: Tiny Titan ermöglicht die Entwicklung und Ausführung von parallelen Programmen, die die Rechenleistung mehrerer Raspberry Pis nutzen.    
-        </li>
-        <li>
-            Fehlerbehebung und Debugging: Tiny Titan kann zur Fehlerbehebung und zum Debugging von Programmen eingesetzt werden, indem die Ausführung auf mehrere Raspberry Pis verteilt wird.
-        </li>
-    </p>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 
-    <h2>Betriebswirtschaft:</h2>
-    <p>
-        <li>
-            Simulation von Geschäftsprozessen: Tiny Titan kann zur Simulation von Geschäftsprozessen verwendet werden, um deren Effizienz zu verbessern und mögliche Probleme zu identifizieren.
-        </li>
-        <li>
-            Datenanalyse für Marketing und Vertrieb: Tiny Titan kann große Da-tenmengen aus Marketing- und Vertriebskampagnen analysieren, um Kundensegmente zu identifizieren und gezielte Kampagnen zu entwickeln.
-        </li>
-        <li>
-            Risikobewertung und -management: Tiny Titan kann zur Bewertung und zum Management von Unternehmensrisiken eingesetzt werden, indem große Datenmengen analysiert werden.
-        </li>
-    </p>
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
 
-    <h2>Prozessmanagement:</h2>
-    <p>
-        <li>
-            Workflow-Automatisierung: Tiny Titan kann zur Automatisierung von Workflows in Unternehmen eingesetzt werden, um die Effizienz und Produktivität zu verbessern.
-        </li>
-        <li>
-            Lieferkettenmanagement: Tiny Titan kann zur Optimierung von Lieferketten eingesetzt werden, indem Daten aus verschiedenen Quellen gesammelt und analysiert werden.
-        </li>
-        <li>
-            Qualitätsmanagement: Tiny Titan kann zur Überwachung und Verbesserung der Qualität von Produkten und Dienstleistungen eingesetzt.
-        </li>
-    </p>
+	</head>
 
-    <h1>Barrieren</h1>
-    <img src="./img/barrieren.png" alt="">
-    <p>
-        Jede Barriere (oder unterschiedliche Farbe) die hinzugefügt wurde repräsentiert ein weiteren PC der dazugeschalten wurde. Mehr Farben bedeutet mehr PCs. Es wird die selbe Leistung erbracht, aber es wird auf mehrere PCs aufgeteilt. Wie Teamwork. Jeder hat eine Aufgabe und wenn man zusammenarbeitet wird man schneller fertig.
-    </p>
-    <h2>Ressourcen</h2>
-    <li>Tiny Titan Website: <a href="https://github.com/TinyTitan">https://github.com/TinyTitan</a></li>
-    <li>Tiny Titan GitHub Repository: <a href="https://github.com/TinyTitan">https://github.com/TinyTitan</a></li>
-    <li>Tiny Titan Software: <a href="https://github.com/TinyTitan">https://github.com/TinyTitan</a></li>
-    <li>Tiny Titan Anleitung: <a href="https://tinytitan.github.io/downloads/TinyTitanBuildGuide.pdf">https://tinytitan.github.io/downloads/TinyTitanBuildGuide.pdf</a></li>
-</body>
-    <script src="animation.js"></script>
+    <body data-spy="scroll" data-target="#main-navbar">
+        <div class="page-loader"></div>  <!-- Display loading image while page loads -->
+    	<div class="body">
+        	<!-- Begin text carousel intro section -->
+			<section id="text-carousel-intro-section" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/slider-bg.jpg);">
+				
+				<div class="container">
+					<div class="caption text-center text-white" data-stellar-ratio="0.7">
+
+						<div id="owl-intro-text" class="owl-carousel">
+							<div class="item">
+								<h1>Tiny Titan</h1>
+                                <div class="extra-space-l"></div>
+							</div>
+						</div>
+
+					</div> <!-- /.caption -->
+				</div> <!-- /.container -->
+
+			</section>
+			<!-- End text carousel intro section -->
+                
+                <div class="extra-space-l"></div>
+                
+               <!-- End Our Skill -->
+          </section>
+          <!-- End about section -->
+
+            <!-- Begin Services -->
+            <section id="services-section" class="page text-center">
+                <!-- Begin page header-->
+                <div class="page-header-wrapper">
+                    <div class="container">
+                        <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+                            <h2>Anleitung</h2>
+                            <div class="devider"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End page header-->
+            
+                <!-- Begin roatet box-2 -->
+                <div class="rotate-box-2-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <a href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0">
+                                    <span class="rotate-box-icon"><i class="fa fa-mobile"></i></span>
+                                    <div class="rotate-box-info">
+                                        <h4>Funktionen</h4>
+                                        <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>
+                                    </div>
+                                </a>
+                            </div>
+            
+                            <div class="col-md-3 col-sm-6">
+                                <a href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0.2s">
+                                    <span class="rotate-box-icon"><i class="fa fa-pie-chart"></i></span>
+                                    <div class="rotate-box-info">
+                                        <h4>Steuerung</h4>
+                                        <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>
+                                    </div>
+                                </a>
+                            </div>
+            
+                            <div class="col-md-3 col-sm-6">
+                                <a href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0.4s">
+                                    <span class="rotate-box-icon"><i class="fa fa-cloud"></i></span>
+                                    <div class="rotate-box-info">
+                                        <h4>Erklärung</h4>
+                                        <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col-md-3 col-sm-6">
+                                <a href="#" class="rotate-box-2 square-icon text-center wow zoomIn" data-wow-delay="0.6s">
+                                    <span class="rotate-box-icon"><i class="fa fa-pencil"></i></span>
+                                    <div class="rotate-box-info">
+                                        <h4>Barrieren</h4>
+                                        <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div> <!-- /.row -->
+                    </div> <!-- /.container -->
+                </div>
+                <!-- End rotate-box-2 -->
+            </section>
+            <!-- End Services -->
+              
+              
+              
+              
+            <!-- Begin testimonials -->
+            <section id="testimonial-section">
+                <div id="testimonial-trigger" class="testimonial text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/counter-bg.jpg);">
+                    <div class="cover"></div>
+                    <!-- Begin page header-->
+                    <div class="page-header-wrapper">
+                        <div class="container">
+                            <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+                                <h2>Legende</h2>
+                                <div class="devider"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End page header-->
+                    <div class="container">
+                        <div class="testimonial-inner center-block text-center">
+                            <div id="owl-testimonial" class="owl-carousel">
+                                <div class="item">
+                                    <blockquote>
+                                        <p>
+                                            "(de. Gravitation) Die Kraft, die Gegenstände „herunterfallen“ lässt. Hier sind es die Kugeln und die große Kugel. 
+                                            1 oder mehr bedeutet, dass die Kugeln auf den Boden gedrückt werden
+                                            0 bedeutet, dass die Kugeln frei fliegen
+                                            -1 oder weniger bedeutet, dass die Kugeln auf die Decke gedrückt werden"
+                                        </p>
+                                        <footer><cite title="Source Title">Gravity</cite></footer>
+                                    </blockquote>
+                                </div>
+                                <div class="item">
+                                    <blockquote>
+                                        <p>
+                                            "(de. Viskosität) drückt aus wie dick oder dünn flüssig die Kugeln oder das Wasser ist."
+                                        </p>
+                                        <footer><cite title="Source Title">Viscosity</cite></footer>
+                                    </blockquote>
+                                </div>
+                                <div class="item">
+                                    <blockquote>
+                                        <p>
+                                            "(de. Druck) Stell dir vor, du hast einen Schuh in der Hand und drückst damit auf einen Luftballon. Je fester du drückst, desto mehr Luft entweicht aus dem Ballon. Das liegt daran, dass du mit deinem Schuh eine Kraft auf den Ballon ausübst. Diese Kraft verteilt sich auf die gesamte Fläche des Schuhs.
+                                            Druck ist die Kraft, die auf eine Fläche ausgeübt wird. Je kleiner die Fläche ist, desto größer ist der Druck, wenn die gleiche Kraft ausgeübt wird.".
+                                        </p>
+                                        <footer><cite title="Source Title">Pressure</cite></footer>
+                                    </blockquote>
+                                </div>
+                                <div class="item">
+                                    <blockquote>
+                                        <p>
+                                            "(de. Dichte) Beschreibt wie nah Moleküle beisammen stehen. Je höher die Dichte desto näher sind sich die Moleküle (Moleküle sind ganz kleine teilchen)".
+                                        </p>
+                                        <footer><cite title="Source Title">Density</cite></footer>
+                                    </blockquote>
+                                </div>
+                                <div class="item">
+                                    <blockquote>
+                                        <p>
+                                            "(de. Elastizität) Wie weit sich die Kugeln oder das Wasser dehnen lassen".
+                                        </p>
+                                        <footer><cite title="Source Title">Elasticity</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End testimonials -->
+   
+                
+            <!-- Begin team-->
+            <section id="team-section" class="page">
+                <!-- Begin page header-->
+                <div class="page-header-wrapper">
+                    <div class="container">
+                        <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+                            <h2>Our Team</h2>
+                            <div class="devider"></div>
+                            <p class="subtitle">Meat our experts</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End page header-->
+                <div class="container">
+                    <div class="row">
+                        <div class="team-items">
+                            <div class="col-md-2">
+                                <div class="team-container wow bounceIn" data-wow-delay="0.2s">
+                                    <div class="team-item">
+                                        <div class="team-triangle">
+                                            <div class="content">
+                                                <img src="img/team/1.jpg" alt="title"/>
+                                                <div class="team-hover text-center">
+                                                    <i class="fa fa-male"></i>
+                                                    <p>John Doe</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="team-container wow bounceIn" data-wow-delay="0.3s">
+                                    <div class="team-item">
+                                        <div class="team-triangle">
+                                            <div class="content">
+                                                <img src="img/team/1.jpg" alt="title"/>
+                                                <div class="team-hover text-center">
+                                                    <i class="fa fa-female"></i>
+                                                    <p>Jane Doe</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="team-container wow bounceIn" data-wow-delay="0.4s">
+                                    <div class="team-item">
+                                        <div class="team-triangle">
+                                            <div class="content">
+                                                <img src="img/team/1.jpg" alt="title"/>
+                                                <div class="team-hover text-center">
+                                                    <i class="fa fa-male"></i>
+                                                    <p>John Doe</p>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-2">
+                                <div class="team-container wow bounceIn" data-wow-delay="0.5s">
+                                    <div class="team-item">
+                                        <div class="team-triangle">
+                                            <div class="content">
+                                                <img src="img/team/1.jpg" alt="title"/>
+                                                <div class="team-hover text-center">
+                                                    <i class="fa fa-male"></i>
+                                                    <p>John Doe</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="team-container wow bounceIn" data-wow-delay="0.6s">
+                                    <div class="team-item">
+                                        <div class="team-triangle">
+                                            <div class="content">
+                                                <img src="img/team/1.jpg" alt="title"/>
+                                                <div class="team-hover text-center">
+                                                    <i class="fa fa-male"></i>
+                                                    <p>John Doe</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="team-container wow bounceIn" data-wow-delay="0.7s">
+                                    <div class="team-item">
+                                        <div class="team-triangle">
+                                            <div class="content">
+                                                <img src="img/team/1.jpg" alt="title"/>
+                                                <div class="team-hover text-center">
+                                                    <i class="fa fa-male"></i>
+                                                    <p>John Doe</p>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="team-container wow bounceIn" data-wow-delay="0.8s">
+                                    <div class="team-item">
+                                        <div class="team-triangle">
+                                            <div class="content">
+                                                <img src="img/team/1.jpg" alt="title"/>
+                                                <div class="team-hover text-center">
+                                                    <i class="fa fa-female"></i>
+                                                    <p>Jane Doe</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>  
+                    </div>
+                </div>
+
+            </section>
+            <!-- End team-->
+                
+                
+                
+                
+            <!-- Begin partners -->
+            <section id="partners-section">
+                <!-- Begin page header-->
+                <div class="page-header-wrapper">
+                    <div class="container">
+                        <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+                            <h2>Our Partners</h2>
+                            <div class="devider"></div>
+                            <p class="subtitle">Those who trust us</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End page header-->
+                <div class="container">
+                    <div id="owl-partners" class="owl-carousel">
+                        <img src="img/partners/1.png" alt="img">
+                        <img src="img/partners/2.png" alt="img">
+                        <img src="img/partners/3.png" alt="img">
+                        <img src="img/partners/4.png" alt="img">
+                        <img src="img/partners/5.png" alt="img">
+                        <img src="img/partners/6.png" alt="img">
+                        <img src="img/partners/7.png" alt="img">
+                    </div>
+                </div>
+            </section>
+            <!-- End partners -->
+                
+                
+                
+                
+            <!-- Begin prices section -->
+			<section id="prices-section" class="page">
+
+                <!-- Begin page header-->
+                <div class="page-header-wrapper">
+                    <div class="container">
+                        <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+                            <h2>Prices</h2>
+                            <div class="devider"></div>
+                            <p class="subtitle">That how much</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End page header-->
+
+				<div class="extra-space-l"></div>
+
+				<!-- Begin prices -->
+				<div class="prices">
+					<div class="container">
+						<div class="row">
+							
+							<div class="price-box col-sm-6 col-md-3 wow flipInY" data-wow-delay="0.3s">
+								<div class="panel panel-default">
+									<div class="panel-heading text-center">
+										<i class="fa fa-plug fa-2x"></i>
+										<h3>Basic</h3>
+									</div>
+									<div class="panel-body text-center">
+										<p class="lead"><strong>$49</strong></p>
+									</div>
+									<ul class="list-group text-center">
+										<li class="list-group-item">Personal Use</li>
+										<li class="list-group-item">3 projects</li>
+										<li class="list-group-item">1 GB Disk</li>
+										<li class="list-group-item">Custom Domain</li>
+										<li class="list-group-item">24/7 Support</li>
+									</ul>
+									<div class="panel-footer text-center">
+										<a class="btn btn-default" href="#">Order Now!</a>
+									</div>
+								</div>										
+							</div>
+
+							<div class="price-box col-sm-6 col-md-3 wow flipInY" data-wow-delay="0.5s">
+								<div class="panel panel-default">
+									<div class="panel-heading text-center">
+										<i class="fa fa-cog fa-2x"></i>
+										<h3>Advanced</h3>
+									</div>
+									<div class="panel-body text-center">
+										<p class="lead"><strong>$99</strong></p>
+									</div>
+									<ul class="list-group text-center">
+										<li class="list-group-item">Personal Use</li>
+										<li class="list-group-item">5 projects</li>
+										<li class="list-group-item">5 GB Disk</li>
+										<li class="list-group-item">Custom Domain</li>
+										<li class="list-group-item">24/7 Support</li>
+									</ul>
+									<div class="panel-footer text-center">
+										<a class="btn btn-default" href="#">Order Now!</a>
+									</div>
+								</div>										
+							</div>
+							
+							<div class="price-box col-sm-6 price-box-featured col-md-3 wow flipInY" data-wow-delay="0.7s">
+								<div class="panel panel-default">
+									<div class="panel-heading text-center">
+										<i class="fa fa-star fa-2x"></i>
+										<h3>Professional</h3>
+									</div>
+									<div class="panel-body text-center">
+										<p class="lead"><strong>$149</strong></p>
+									</div>
+									<ul class="list-group text-center">
+										<li class="list-group-item">Personal Use</li>
+										<li class="list-group-item">20 Projects</li>
+										<li class="list-group-item">20 GB Disk</li>
+										<li class="list-group-item">Custom Domain</li>
+										<li class="list-group-item">24/7 Support</li>
+									</ul>
+									<div class="panel-footer text-center">
+										<a class="btn btn-default" href="#">Order Now!</a>
+									</div>
+									<div class="price-box-ribbon"><strong>Popular</strong></div>
+								</div>										
+							</div>
+							
+							<div class="price-box col-sm-6 col-md-3 wow flipInY" data-wow-delay="0.9s">
+								<div class="panel panel-default">
+									<div class="panel-heading text-center">
+										<i class="fa fa-plus fa-2x"></i>
+										<h3>Ultimate</h3>
+									</div>
+									<div class="panel-body text-center">
+										<p class="lead"><strong>$199</strong></p>
+									</div>
+									<ul class="list-group text-center">
+										<li class="list-group-item">Multi Use</li>
+										<li class="list-group-item">Unlimited Projects</li>
+										<li class="list-group-item">99 GB Disk</li>
+										<li class="list-group-item">Custom Domain</li>
+										<li class="list-group-item">24/7 Support</li>
+									</ul>
+									<div class="panel-footer text-center">
+										<a class="btn btn-default" href="#">Order Now!</a>
+									</div>
+								</div>										
+							</div>
+							
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</div>
+				<!-- End prices -->
+				<div class="extra-space-l"></div>
+			</section>
+			<!-- End prices section -->
+                
+                
+                
+                
+            <!-- Begin social section -->
+			<section id="social-section">
+            
+                 <!-- Begin page header-->
+                <div class="page-header-wrapper">
+                    <div class="container">
+                        <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+                            <h2>Join Us</h2>
+                            <div class="devider"></div>
+                            <p class="subtitle">Follow us on social networks</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End page header-->
+                
+                <div class="container">
+                	<ul class="social-list">
+                		<li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.3s"><span class="rotate-box-icon"><i class="fa fa-facebook"></i></span></a></li>
+                		<li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.4s"><span class="rotate-box-icon"><i class="fa fa-twitter"></i></span></a></li>
+                		<li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.5s"><span class="rotate-box-icon"><i class="fa fa-google-plus"></i></span></a></li>
+                		<li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.6s"><span class="rotate-box-icon"><i class="fa fa-pinterest-p"></i></span></a></li>
+                		<li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.7s"><span class="rotate-box-icon"><i class="fa fa-tumblr"></i></span></a></li>
+                		<li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.8s"><span class="rotate-box-icon"><i class="fa fa-dribbble"></i></span></a></li>                      
+                    </ul>
+                </div>
+                
+            </section>
+            <!-- End social section -->
+                
+                
+                
+                
+            <!-- Begin contact section -->
+			<section id="contact-section" class="page text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/map-bg.jpg);">
+            <div class="cover"></div>
+            
+                 <!-- Begin page header-->
+                <div class="page-header-wrapper">
+                    <div class="container">
+                        <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+                            <h2>Contacts</h2>
+                            <div class="devider"></div>
+                            <p class="subtitle">All to contact us</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End page header-->
+                
+                <div class="contact wow bounceInRight" data-wow-delay="0.4s">
+                    <div class="container">
+                    	<div class="row">
+                        
+                            <div class="col-sm-6">
+                                <div class="contact-info">
+                                    <h4>Our Address</h4>
+                                    <ul class="contact-address">
+			                            <li><i class="fa fa-map-marker fa-lg"></i>&nbsp; 100 Limpbiscayne Blvd. (North) 17st Floor ,<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New World Tower New York ,<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New York, USA, 33148</li>
+			                            <li><i class="fa fa-phone"></i>&nbsp; 1 -234 -456 -7890</li>
+			                            <li><i class="fa fa-print"></i>&nbsp; 1 -234 -456 -7890</li>
+			                            <li><i class="fa fa-envelope"></i> info@yourdomain.com</li>
+			                            <li><i class="fa fa-skype"></i> Unika-Design</li>
+			                        </ul>
+                                </div>
+                            </div>
+                        
+                        	<div class="col-sm-6">
+                                <div class="contact-form">
+                                	<h4>Write to us</h4>
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control input-lg" placeholder="Your Name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control input-lg" placeholder="E-mail" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control input-lg" placeholder="Subject" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control input-lg" rows="5" placeholder="Message" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn wow bounceInRight" data-wow-delay="0.8s">Send</button>
+                                    </form>
+                                </div>	
+                            </div>
+                                                                                
+                        </div> <!-- /.row -->
+                    </div> <!-- /.container -->
+                </div>
+            </section>
+            <!-- End contact section -->
+                
+                
+
+                
+            <!-- Begin footer -->
+            <footer class="text-off-white">
+            
+                <div class="footer-top">
+                	<div class="container">
+                    	<div class="row wow bounceInLeft" data-wow-delay="0.4s">
+
+                            <div class="col-sm-6 col-md-4">
+                            	<h4>Useful Links</h4>
+                                <ul class="imp-links">
+                                	<li><a href="">About</a></li>
+                                	<li><a href="">Services</a></li>
+                                	<li><a href="">Press</a></li>
+                                	<li><a href="">Copyright</a></li>
+                                	<li><a href="">Advertise</a></li>
+                                	<li><a href="">Legal</a></li>
+                                </ul>
+                            </div>
+                        
+                        	<div class="col-sm-6 col-md-4">
+                                <h4>Subscribe</h4>
+                            	<div id="footer_signup">
+                                    <div id="email">
+                                        <form id="subscribe" method="POST">
+                                            <input type="text" placeholder="Enter email address" name="email" id="address" data-validate="validate(required, email)"/>
+                                            <button type="submit">Submit</button>
+                                            <span id="result" class="section-description"></span>
+                                        </form> 
+                                    </div>
+                                </div> 
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> 
+                            </div>
+
+                            <div class="col-sm-12 col-md-4">
+                                <h4>Recent Tweets</h4>
+                                <div class="single-tweet">
+                                    <div class="tweet-content"><span>@Unika</span> Excepteur sint occaecat cupidatat non proident</div>
+                                    <div class="tweet-date">1 Hour ago</div>
+                                </div>
+                                <div class="single-tweet">
+                                    <div class="tweet-content"><span>@Unika</span> Excepteur sint occaecat cupidatat non proident uku shumaru</div>
+                                    <div class="tweet-date">1 Hour ago</div>
+                                </div>
+                            </div>
+                            
+                        </div> <!-- /.row -->
+                    </div> <!-- /.container -->
+                </div>
+                
+                <div class="footer">
+                    <div class="container text-center wow fadeIn" data-wow-delay="0.4s">
+                        <p class="copyright">Copyright &copy; 2024 - Designed By Delimehic Irmin and Philipp Schwarz</a>
+                    </div>
+                </div>
+
+            </footer>
+            <!-- End footer -->
+
+            <a href="#" class="scrolltotop"><i class="fa fa-arrow-up"></i></a> <!-- Scroll to top button -->
+                                              
+        </div><!-- body ends -->
+        
+        <!-- Plugins JS -->
+		<script src="inc/jquery/jquery-1.11.1.min.js"></script>
+		<script src="inc/bootstrap/js/bootstrap.min.js"></script>
+		<script src="inc/owl-carousel/js/owl.carousel.min.js"></script>
+		<script src="inc/stellar/js/jquery.stellar.min.js"></script>
+		<script src="inc/animations/js/wow.min.js"></script>
+        <script src="inc/waypoints.min.js"></script>
+		<script src="inc/isotope.pkgd.min.js"></script>
+		<script src="inc/classie.js"></script>
+		<script src="inc/jquery.easing.min.js"></script>
+		<script src="inc/jquery.counterup.min.js"></script>
+		<script src="inc/smoothscroll.js"></script>
+
+		<!-- Theme JS -->
+		<script src="js/theme.js"></script>
+    </body>      
 </html>
