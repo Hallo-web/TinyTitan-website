@@ -1,72 +1,77 @@
-<!doctype html>
-<html lang="en-US">
-	<head>
-        <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Tiny Titan</title>
-		<meta name="description" content="Unika - Responsive One Page HTML5 Template">
-		<meta name="keywords" content="HTML5, Bootsrtrap, One Page, Responsive, Template, Portfolio" />
-
-		<!-- Mobile Metas -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- Google Fonts  -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'> <!-- Body font -->
-		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'> <!-- Navbar font -->
-
-		<!-- Libs and Plugins CSS -->
-		<link rel="stylesheet" href="inc/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="inc/animations/css/animate.min.css">
-		<link rel="stylesheet" href="inc/font-awesome/css/font-awesome.min.css"> <!-- Font Icons -->
-		<link rel="stylesheet" href="inc/owl-carousel/css/owl.carousel.css">
-		<link rel="stylesheet" href="inc/owl-carousel/css/owl.theme.css">
-
-		<!-- Theme CSS -->
-        <link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/style-Anleitung.css">
-		<link rel="stylesheet" href="css/mobile.css">
-
-		<!-- Skin CSS -->
-		<link rel="stylesheet" href="css/skin/cool-gray.css">
-        <!-- <link rel="stylesheet" href="css/skin/ice-blue.css"> -->
-        <!-- <link rel="stylesheet" href="css/skin/summer-orange.css"> -->
-        <!-- <link rel="stylesheet" href="css/skin/fresh-lime.css"> -->
-        <!-- <link rel="stylesheet" href="css/skin/night-purple.css"> -->
-
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-	</head>
+<link rel="stylesheet" href="./css/style-Anleitung.css">
 
 
-
-<body>
+<div class="book">
+    <div class="page">
+      <div class="front cover">
+        <h1>FlipBook</h1>
+        <p>2024.<br>Second edition</p>
+      </div>
+      <div class="back">
+        <h2>Responsive</h2>
+        <p>Fully responsive CSS flip book, thanks to the <code>cqmin</code> unit.</p>
+      </div>
+    </div>
+  
+    <div class="page">
+      <div class="front">
+        <p>Even more, the book height is dicated by the amount of content in the tallest page.
+          The only thing you need to take care of is how much text you put into a page.</p>
+      </div>
+      <div class="back">
+        <img src="https://picsum.photos/id/24/600/600" alt="Img 1">
+      </div>
+    </div>
+  
+    <div class="page">
+      <div class="front">
+        <h2>JS at its minimum</h2>
+        <p>JavaScript is at its minimum. Basically it's only used to set the initial
+          page index and assign click listeners to the pages. Modifies the CSS <b>Var</b>
+          for the <i>current</i> page, and the rest is handled entirely by CSS.</p>
+      </div>
+      <div class="back">
+        <p>Additionally JavaScript allows you to click on an anchor link in your
+          text — without turning the page. You can also have multiple independent
+          flip books in a single document. You're all covered.</p>
+      </div>
+    </div>
+  
+    <div class="page">
+      <div class="front">
+        <h2>Crafting CSS magic</h2>
+        <p>The opened (<i>viewing</i>) pages of the flip book are always kept at the same elevation.
+        This is necessary if your book has no inclination (is top-down-view).
+        Have you noticed that you can also click on the pages edge? CSS will nicely animate the group
+          of pages to skip with a staggered animation.</p>
+      </div>
+      <div class="back">
+        <p>Like in this demo, you can change the perspective of the parent container and change the
+          X axis rotation of the book for extra effect.</p>
+      </div>
+    </div>
     
-</body>
-
-
-
-
-
-
-
-            <!-- Plugins JS -->
-		<script src="inc/jquery/jquery-1.11.1.min.js"></script>
-		<script src="inc/bootstrap/js/bootstrap.min.js"></script>
-		<script src="inc/owl-carousel/js/owl.carousel.min.js"></script>
-		<script src="inc/stellar/js/jquery.stellar.min.js"></script>
-		<script src="inc/animations/js/wow.min.js"></script>
-        <script src="inc/waypoints.min.js"></script>
-		<script src="inc/isotope.pkgd.min.js"></script>
-		<script src="inc/classie.js"></script>
-		<script src="inc/jquery.easing.min.js"></script>
-		<script src="inc/jquery.counterup.min.js"></script>
-		<script src="inc/smoothscroll.js"></script>
-
-		<!-- Theme JS -->
-		<script src="js/theme.js"></script>
+    <div class="page">
+      <div class="front">
+        <p>The necessary FlipBook's CSS is barely 30 lines, there is no swipe, natural page flip angling,
+          complex shadows, etc. in order to keep it as simple as possible.</p>
+      </div>
+      <div class="back">
+        <p>Feel free to use and abuse this code. Drop me a line if you find it cool or useful, or just
+          want to say <i>hi</i>.</p>
+      </div>
+    </div>
+  
+    <div class="page">
+      <div class="front">
+        <img src="https://picsum.photos/id/1073/600/600" alt="Img 2">
+      </div>
+      <div class="back cover">
+        <h3>That's all, folks</h3>
+        <p>FlipBook code and content:<br><a href="https://stackoverflow.com/users/383904/roko-c-buljan" target="_blank" rel="nofollow">Roko C. Buljan</a>
+        <br>Original idea:<br><a href="https://stackoverflow.com/a/76978444/383904" target="_blank" rel="nofollow">Stack Overflow answer</a>
+        <br>Images by: picsum.photos</p>
+      </div>
+    </div>
+  </div>
+  <script src="./js/flipbook.js"></script>
