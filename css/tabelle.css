@@ -11,7 +11,7 @@ td {
 
 thead th {
 	background-color: #ffebe6;
-	color: #c32e04;
+	color:linear-gradient(to right, blue 5%, magenta 100%); 
 }
 
 td {
