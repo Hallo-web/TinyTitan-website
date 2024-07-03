@@ -1,0 +1,31 @@
+table {
+	border-collapse: separate;
+	border-spacing: 0.2em;
+}
+
+th,
+td {
+	padding: 0.2em 0.5em;
+	border-radius: 0.1em;
+}
+
+thead th {
+	background-color: #ffebe6;
+	color: #c32e04;
+}
+
+td {
+	font-style: italic;
+	text-align: right;
+	box-shadow: inset 1px 3px 5px -3px rgba(0, 0, 0, 0.5);
+}
+
+tbody tr:nth-child(even) {
+	background-color: #e4ebf2;
+	color: #000;
+}
+
+td:empty {
+	box-shadow: none;
+	background-color: none;
+}
