@@ -1,7 +1,9 @@
 table {
 	border-collapse: separate;
+	border-color: #7b68ee;
 	border-spacing: 0.2em;
 }
+
 
 th,
 td {
@@ -10,12 +12,15 @@ td {
 }
 
 thead th {
-	background-color: white;
+	background-color: #7b68ee;
 }
 
 td {
+	font-size: 38px;
 	font-style: italic;
 	text-align: left;
+	border: #000;
+	border-collapse: collapse;
 	box-shadow: inset 1px 3px 5px -3px rgba(0, 0, 0, 0.5);
 }
 
