@@ -174,7 +174,7 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 	margin-bottom: 15px;
 	margin-right: 25px;
 	margin-top: 10px;
-	float:left;
+	float: left;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
@@ -461,6 +461,7 @@ ul.contact-address li i {
 }
 .page-header h2 {
 	text-transform: uppercase;
+	font-size: 40px
 }
 p.subtitle {
 	letter-spacing: 2px;
