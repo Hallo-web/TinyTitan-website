@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de ">
+<html lang="en-US">
 	<head>
         <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 		<meta charset="utf-8">
@@ -7,6 +7,106 @@
 		<title>Tiny Titan</title>
 		<meta name="description" content="Unika - Responsive One Page HTML5 Template">
 		<meta name="keywords" content="HTML5, Bootsrtrap, One Page, Responsive, Template, Portfolio" />
+        <!-- Add Squares -->
+
+        <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+                    --foreground: 240 10% 3.9%;
+                    --card: 0 0% 100%;
+                    --card-foreground: 240 10% 3.9%;
+                    --popover: 0 0% 100%;
+                    --popover-foreground: 240 10% 3.9%;
+                    --primary: 240 5.9% 10%;
+                    --primary-foreground: 0 0% 98%;
+                    --secondary: 240 4.8% 95.9%;
+                    --secondary-foreground: 240 5.9% 10%;
+                    --muted: 240 4.8% 95.9%;
+                    --muted-foreground: 240 3.8% 46.1%;
+                    --accent: 240 4.8% 95.9%;
+                    --accent-foreground: 240 5.9% 10%;
+                    --destructive: 0 84.2% 60.2%;
+                    --destructive-foreground: 0 0% 98%;
+                    --border: 240 5.9% 90%;
+                    --input: 240 5.9% 90%;
+                    --ring: 240 5.9% 10%;
+                    --radius: 0.5rem;
+                                    }
+                                    .dark {
+                                        --background: 240 10% 3.9%;
+                    --foreground: 0 0% 98%;
+                    --card: 240 10% 3.9%;
+                    --card-foreground: 0 0% 98%;
+                    --popover: 240 10% 3.9%;
+                    --popover-foreground: 0 0% 98%;
+                    --primary: 0 0% 98%;
+                    --primary-foreground: 240 5.9% 10%;
+                    --secondary: 240 3.7% 15.9%;
+                    --secondary-foreground: 0 0% 98%;
+                    --muted: 240 3.7% 15.9%;
+                    --muted-foreground: 240 5% 64.9%;
+                    --accent: 240 3.7% 15.9%;
+                    --accent-foreground: 0 0% 98%;
+                    --destructive: 0 62.8% 30.6%;
+                    --destructive-foreground: 0 0% 98%;
+                    --border: 240 3.7% 15.9%;
+                    --input: 240 3.7% 15.9%;
+                    --ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+        <!-- End Squares -->
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -129,10 +229,6 @@
                 <!-- End rotate-box-2 -->
             </section>
             <!-- End Services -->
-              
-              
-              
-              
             <!-- Begin testimonials -->
             <section id="testimonial-section">
                 <div id="testimonial-trigger" class="testimonial text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/counter-bg.jpg);">
@@ -217,105 +313,166 @@
 
 				<div class="extra-space-l"></div>
 
-				<!-- Begin prices -->
+				<!-- Begin Square Section -->
+                <!-- Square 1 -->
 				<div class="prices">
 					<div class="container">
-						<div class="row">
-							
-							<div class="price-box col-sm-6 col-md-3 wow flipInY" data-wow-delay="0.3s">
-								<div class="panel panel-default">
-									<div class="panel-heading text-center">
-										<i class="fa fa-plug fa-2x"></i>
-										<h3><a href="Wirtschaftsinformatik.html">Informatik</a></h3>
-									</div>
-									<div class="panel-body text-center">
-										<p class="lead"><strong></strong></p>
-									</div>
-									<ul class="list-group text-center">
+                        <div class="flex justify-center items-center h-screen">
+                            <div class="relative">
+                              <button id="expandButton" class="w-32 h-32 transform rotate-45 bg-secondary text-secondary-foreground flex justify-center items-center rounded-lg transition-transform duration-300 ease-in-out">
+                                <span class="transform -rotate-45">Titel</span>
+                              </button>
+                              <div id="expandedContent" class="hidden fixed top-0 left-0 w-full h-screen bg-black bg-opacity-80 text-white flex flex-col justify-center items-center transition-opacity duration-300 ease-in-out">
+                                <h1 class="text-3xl mb-4">Titel</h1>
+                                <div class="grid grid-cols-3 gap-4 w-full">
+                                  <div class="bg-opacity-90 bg-card text-card-foreground p-4 rounded-lg">
+                                    <h2 class="text-xl mb-2">Untertitel</h2>
+                                    <p>Text</p>
+                                  </div>
+                                  <div class="bg-opacity-90 bg-card text-card-foreground p-4 rounded-lg">
+                                    <h2 class="text-xl mb-2">Untertitel</h2>
+                                    <p>Text</p>
+                                  </div>
+                                  <div class="bg-opacity-90 bg-card text-card-foreground p-4 rounded-lg">
+                                    <h2 class="text-xl mb-2">Untertitel</h2>
+                                    <p>Text</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                <div class="prices">
+                <div class="container">
+                    <div class="flex justify-center items-center h-screen">
+                        <div class="relative">
+                            <button id="expandButton" class="w-32 h-32 transform rotate-45 bg-secondary text-secondary-foreground flex justify-center items-center rounded-lg transition-transform duration-300 ease-in-out">
+                            <span class="transform -rotate-45">Titel</span>
+                            </button>
+                            <div id="expandedContent" class="hidden fixed top-0 left-0 w-full h-screen bg-black bg-opacity-80 text-white flex flex-col justify-center items-center transition-opacity duration-300 ease-in-out">
+                            <h1 class="text-3xl mb-4">Titel</h1>
+                            <div class="grid grid-cols-3 gap-4 w-full">
+                                <div class="bg-opacity-90 bg-card text-card-foreground p-4 rounded-lg">
+                                <h2 class="text-xl mb-2">Untertitel</h2>
+                                <p>Text</p>
+                                </div>
+                                <div class="bg-opacity-90 bg-card text-card-foreground p-4 rounded-lg">
+                                <h2 class="text-xl mb-2">Untertitel</h2>
+                                <p>Text</p>
+                                </div>
+                                <div class="bg-opacity-90 bg-card text-card-foreground p-4 rounded-lg">
+                                <h2 class="text-xl mb-2">Untertitel</h2>
+                                <p>Text</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
 
-									</ul>
-									<div class="panel-footer text-center">
-										<a class="btn btn-default" href="#"></a>
-									</div>
-								</div>										
-							</div>
+                        
+                <div class="prices">
+                <div class="container">
+                    <div class="flex justify-center items-center h-screen">
+                        <div class="relative">
+                            <button id="expandButton" class="w-32 h-32 transform rotate-45 bg-secondary text-secondary-foreground flex justify-center items-center rounded-lg transition-transform duration-300 ease-in-out">
+                            <span class="transform -rotate-45">Titel</span>
+                            </button>
+                            <div id="expandedContent" class="hidden fixed top-0 left-0 w-full h-screen bg-black bg-opacity-80 text-white flex flex-col justify-center items-center transition-opacity duration-300 ease-in-out">
+                            <h1 class="text-3xl mb-4">Titel</h1>
+                            <div class="grid grid-cols-3 gap-4 w-full">
+                                <div class="bg-opacity-90 bg-card text-card-foreground p-4 rounded-lg">
+                                <h2 class="text-xl mb-2">Untertitel</h2>
+                                <p>Text</p>
+                                </div>
+                                <div class="bg-opacity-90 bg-card text-card-foreground p-4 rounded-lg">
+                                <h2 class="text-xl mb-2">Untertitel</h2>
+                                <p>Text</p>
+                                </div>
+                                <div class="bg-opacity-90 bg-card text-card-foreground p-4 rounded-lg">
+                                <h2 class="text-xl mb-2">Untertitel</h2>
+                                <p>Text</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
 
-							<div class="price-box col-sm-6 col-md-3 wow flipInY" data-wow-delay="0.5s">
-								<div class="panel panel-default">
-									<div class="panel-heading text-center">
-										<i class="fa fa-cog fa-2x"></i>
-										<h3><a href="Wirtschaftsinformatik.html">Informationssysteme</a></h3>
-									</div>
-									<div class="panel-body text-center">
-										<p class="lead"><strong></strong></p>
-									</div>
-									<ul class="list-group text-center">
-									
-									</ul>
-									<div class="panel-footer text-center">
-										<a class="btn btn-default" href="#"></a>
-									</div>
-								</div>										
-							</div>
-							
-							<div class="price-box col-sm-6 price-box-featured col-md-3 wow flipInY" data-wow-delay="0.7s">
-								<div class="panel panel-default">
-									<div class="panel-heading text-center">
-										<i class="fa fa-star fa-2x"></i>
-										<h3><a href="Wirtschaftsinformatik.html">Programmieren</a></h3>
-									</div>
-									<div class="panel-body text-center">
-										<p class="lead"><strong></strong></p>
-									</div>
-									<ul class="list-group text-center">
-									
-									</ul>
-									<div class="panel-footer text-center">
-										<a class="btn btn-default" href="#"></a>
-									</div>
-									<div class="price-box-ribbon"><strong></strong></div>
-								</div>										
-							</div>
-							
-							<div class="price-box col-sm-6 col-md-3 wow flipInY" data-wow-delay="0.9s">
-								<div class="panel panel-default">
-									<div class="panel-heading text-center">
-										<i class="fa fa-plus fa-2x"></i>
-										<h3><a href="Wirtschaftsinformatik.html">Betriebswirtschaft</a></h3>
-									</div>
-									<div class="panel-body text-center">
-										<p class="lead"><strong></strong></p>
-									</div>
-									<ul class="list-group text-center">
-									</ul>
-									<div class="panel-footer text-center">
-										<a class="btn btn-default" href="#"></a>
-									</div>
-								</div>										
-							</div>
-							
-							<div class="price-box col-sm-6 col-md-3 wow flipInY" data-wow-delay="0.9s">
-								<div class="panel panel-default">
-									<div class="panel-heading text-center">
-										<i class="fa fa-plus fa-2x"></i>
-										<h3><a href="Wirtschaftsinformatik.html">Prozessmanagement</a></h3>
-									</div>
-									<div class="panel-body text-center">
-										<p class="lead"><strong></strong></p>
-									</div>
-									<ul class="list-group text-center">
-									</ul>
-									<div class="panel-footer text-center">
-										<a class="btn btn-default" href="#"></a>
-									</div>
-						</div> <!-- /.row -->
-					</div> <!-- /.container -->
-				</div>
-				<!-- End prices -->
+                        
+                <div class="prices">
+                <div class="container">
+                    <div class="flex justify-center items-center h-screen">
+                        <div class="relative">
+                            <button id="expandButton" class="w-32 h-32 transform rotate-45 bg-secondary text-secondary-foreground flex justify-center items-center rounded-lg transition-transform duration-300 ease-in-out">
+                            <span class="transform -rotate-45">Titel</span>
+                            </button>
+                            <div id="expandedContent" class="hidden fixed top-0 left-0 w-full h-screen bg-black bg-opacity-80 text-white flex flex-col justify-center items-center transition-opacity duration-300 ease-in-out">
+                            <h1 class="text-3xl mb-4">Titel</h1>
+                            <div class="grid grid-cols-3 gap-4 w-full">
+                                <div class="bg-opacity-90 bg-card text-card-foreground p-4 rounded-lg">
+                                <h2 class="text-xl mb-2">Untertitel</h2>
+                                <p>Text</p>
+                                </div>
+                                <div class="bg-opacity-90 bg-card text-card-foreground p-4 rounded-lg">
+                                <h2 class="text-xl mb-2">Untertitel</h2>
+                                <p>Text</p>
+                                </div>
+                                <div class="bg-opacity-90 bg-card text-card-foreground p-4 rounded-lg">
+                                <h2 class="text-xl mb-2">Untertitel</h2>
+                                <p>Text</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        
+                <div class="prices">
+                <div class="container">
+                    <div class="flex justify-center items-center h-screen">
+                        <div class="relative">
+                            <button id="expandButton" class="w-32 h-32 transform rotate-45 bg-secondary text-secondary-foreground flex justify-center items-center rounded-lg transition-transform duration-300 ease-in-out">
+                            <span class="transform -rotate-45">Titel</span>
+                            </button>
+                            <div id="expandedContent" class="hidden fixed top-0 left-0 w-full h-screen bg-black bg-opacity-80 text-white flex flex-col justify-center items-center transition-opacity duration-300 ease-in-out">
+                            <h1 class="text-3xl mb-4">Titel</h1>
+                            <div class="grid grid-cols-3 gap-4 w-full">
+                                <div class="bg-opacity-90 bg-card text-card-foreground p-4 rounded-lg">
+                                <h2 class="text-xl mb-2">Untertitel</h2>
+                                <p>Text</p>
+                                </div>
+                                <div class="bg-opacity-90 bg-card text-card-foreground p-4 rounded-lg">
+                                <h2 class="text-xl mb-2">Untertitel</h2>
+                                <p>Text</p>
+                                </div>
+                                <div class="bg-opacity-90 bg-card text-card-foreground p-4 rounded-lg">
+                                <h2 class="text-xl mb-2">Untertitel</h2>
+                                <p>Text</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                                        
+
+                        <script>
+                        const expandButton = document.getElementById('expandButton');
+                        const expandedContent = document.getElementById('expandedContent');
+                        expandButton.addEventListener('click', () => {
+                            expandedContent.classList.toggle('hidden');
+                            expandButton.classList.toggle('hidden');
+                        });
+                        expandedContent.addEventListener('click', () => {
+                            expandedContent.classList.add('hidden');
+                            expandButton.classList.remove('hidden');
+                        });
+                        </script>
+                </div> <!-- /.container -->
+				
+				<!-- End Square Section -->
 				<div class="extra-space-l"></div>
 			</section>
 			<!-- End prices section -->
-                
+            
             <!-- Begin social section -->
 			<section id="social-section">
             
@@ -334,7 +491,7 @@
                 <div class="container">
                 	<ul class="social-list">
                 		<li> <a href="https://www.facebook.com/FHCAMPUS02/" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.3s"><span class="rotate-box-icon"><i class="fa fa-facebook"></i></span></a></li>
-                		<li> <a href="https://www.youtube.com/channel/UCsZRIvdPI-MGEsHSGDMmLpA" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.4s"><span class="rotate-box-icon"><i><img src="img/yt.png" alt="yt"></i></span></a></li>
+                		<li> <a href="https://www.youtube.com/channel/UCsZRIvdPI-MGEsHSGDMmLpA" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.4s"><span class="rotate-box-icon"><i class="fa fa-twitter"></i></span></a></li>
                 		<li> <a href="https://www.instagram.com/fhcampus02/" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.5s"><span class="rotate-box-icon"><i class="fa fa-google-plus"></i></span></a></li>
                 		<li> <a href="https://www.linkedin.com/school/fhcampus02/" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.6s"><span class="rotate-box-icon"><i class="fa fa-pinterest-p"></i></span></a></li>
                 		<li> <a href="https://www.campus02.at" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.7s"><span class="rotate-box-icon"><i class="fa fa-tumblr"></i></span></a></li>
