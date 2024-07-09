@@ -568,12 +568,3 @@ p.subtitle {
 	transform: rotate(-45deg);
 }
 /* ===== End buttons ===== */
-
-/* ===== start video ===== */
-
-.video {
-	height: 50%;
-	width: 100%;
-}
-
-/* ===== end video ===== */
