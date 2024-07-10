@@ -110,10 +110,6 @@ section {
   	background-size: cover;
 }
 
-#header {
-	/* height: 98px; */
-}
-
 
 /* ===== Begin text colors ===== */
 .text-main { color: #363940; } /* Theme main color */
@@ -174,7 +170,6 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 	margin-bottom: 15px;
 	margin-right: 25px;
 	margin-top: 10px;
-	float: left;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
@@ -311,11 +306,6 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 }
 /* ===== End testimonial ===== */
 
-
-/* ===== Begin panels ===== */
-.panel, .panel-heading, .panel-footer  {
-}
-/* ===== End panels ===== */
 
 /* ===== Begin prices ===== */
 .prices .panel {
