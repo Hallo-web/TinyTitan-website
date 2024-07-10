@@ -3,17 +3,29 @@ function createDynamicContent() {
   const container = document.getElementById('anleitungs-container');
   container.innerHTML = `
     <div class="container5">
-      <div class="satz">Satz1</div>
-      <div class="satz">Satz2</div>
+      <div class="satz">Erklärung:Er ist eine Gruppe von Computern, die zusammenarbeiten.</div>
+      <div class="satz">Funktion:Er kann im Grunde vieles aber, was ihr gerade sieht, ist eine Physik Simulation.</div>
       <div class="bild-container">
         <div class="bild" id="bild1">
           <div class="overlay">
-            <span class="textOverImage">Bild 1</span>
+            <span class="textOverImage">1: Ball Größer ↑, Ball Kleiner ↓
+2: ↑ und ↓ zum Auswählen und ↔ zum umstellen
+3: Bewegen
+5: Entfernt Barrieren
+6: Kugelansicht und Wasseransicht wechseln
+7: Controller an
+9: Barrieren Ansicht an und aus
+10: Fügt Barrieren hinzu
+A: Gravity 0
+B: Density 0 und Pressure 0 Elasticity 115
+Y: Density 30 Elasticity -30
+X: Standarteinstellung
+</span>
           </div>
         </div>
         <div class="bild" id="bild2">
           <div class="overlay">
-            <span class="textOverImage">Bild 2</span>
+            <span class="textOverImage">Jede Barriere (oder unterschiedliche Farbe) die hinzugefügt wurde reprä-sentiert ein weiteren PC der dazugeschalten wurde. Mehr Farben -> mehr PCs. Es wird die selbe Leistung erbracht, aber es wird auf mehrere PCs aufgeteilt. Wie Teamwork. Jeder hat eine Aufgabe und wenn man zusam-menarbeitet wird man schneller fertig.</span>
           </div>
         </div>
       </div>
