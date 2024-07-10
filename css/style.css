@@ -569,3 +569,9 @@ p.subtitle {
 	transform: rotate(-45deg);
 }
 /* ===== End buttons ===== */
+
+/* ===== stop users from scrolling if textbox is open ===== */
+body.no-scroll {
+	overflow: hidden;
+	height: 100vh;
+  }

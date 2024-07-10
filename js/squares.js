@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const container = document.querySelector('#squares-container');
+    const body = document.body;
+    let openSquare = null;
     const squares = [
         { title: "Informatik" },
         { subheading1_1: "Rechenintensive Aufgaben" },
