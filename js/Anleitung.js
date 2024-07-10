@@ -90,20 +90,16 @@ function createDynamicContent() {
       font-weight: bold;
       color: #ffffff;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-      background-color: rgba(0, 0, 0, 0.5);
+      
       padding: 10px 20px;
       border-radius: 5px;
       color: #f5f5f5; /* Light gray */
       font-size: 24px; /* Increased font size */
       font-weight: bold;
       text-shadow: 1px 1px 2px rgba(255,255,255,0.5); /* Light gray shadow */
-      background-color: rgba(255,255,255,0.2); /* White with 20% opacity */
       padding: 10px 20px;
       border-radius: 5px;
     }
-
-    .bild:hover .overlay {
-    background-color: rgba(0, 0, 0, 0.6);
 }  
   `;
   document.head.appendChild(style);
