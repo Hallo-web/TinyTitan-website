@@ -9,18 +9,19 @@ function createDynamicContent() {
         <div class="bild" id="bild1">
           <img src="./img/Controller.png" alt="Bild 1">
           <div class="overlay"> 
-            <span class="textOverImage">1: Ball Größer ↑, Ball Kleiner ↓
-            2: ↑ und ↓ zum Auswählen und ↔ zum umstellen
-            3: Bewegen
-            5: Entfernt Barrieren
-            6: Kugelansicht und Wasseransicht wechseln
-            7: Controller an
-            9: Barrieren Ansicht an und aus
-            10: Fügt Barrieren hinzu
-            A: Gravity 0
-            B: Density 0 und Pressure 0 Elasticity 115
-            Y: Density 30 Elasticity -30
-            X: Standarteinstellung
+            <span class="textOverImage">
+            <li><strong>1:</strong> Ball Größer ↑, Ball Kleiner ↓</li>
+            <li><strong>2:</strong> ↑ und ↓ zum Auswählen und ↔ zum umstellen</li>
+            <li><strong>3:</strong> Bewegen</li>
+            <li><strong>5:</strong> Entfernt Barrieren</li>
+            <li><strong>6:</strong> Kugelansicht und Wasseransicht wechseln</li>
+            <li><strong>7:</strong> Controller an</li>
+            <li><strong>9:</strong> Barrieren Ansicht an und aus</li>
+            <li><strong>10:</strong> Fügt Barrieren hinzu</li>
+            <li><strong>A:</strong> Gravity 0</li>
+            <li><strong>B:</strong> Density 0 und Pressure 0 Elasticity 115</li>
+            <li><strong>Y:</strong> Density 30 Elasticity -30</li>
+            <li><strong>X:</strong> Standarteinstellung</li>
             </span>
           </div>
         </div>
@@ -84,24 +85,47 @@ function createDynamicContent() {
       opacity: 1;
       transition: opacity 0.3s ease;
     }
+    
     .textOverImage {
       color: white;
-      font-size: 36px;
-      font-weight: bold;
-      color: #ffffff;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-      
-      padding: 10px 20px;
-      border-radius: 5px;
-      color: #f5f5f5; /* Light gray */
-      font-size: 24px; /* Increased font size */
-      font-weight: bold;
-      text-shadow: 1px 1px 2px rgba(255,255,255,0.5); /* Light gray shadow */
-      padding: 10px 20px;
-      border-radius: 5px;
+      font-size: 16px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+      padding: 4px;
+      border-radius: 3px;
+      overflow-y: auto;
+      max-height: 100%;
+      text-align: left;
     }
-}  
-  `;
+
+    .textOverImage ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .textOverImage li {
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .textOverImage strong {
+      color: #ffff00;
+      margin-right: 5px;
+    }
+
+
+    #bild1 .overlay {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    #bild2 .textOverImage {
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: center;
+    }
+  }
+}`;
   document.head.appendChild(style);
 
   // Add animation
