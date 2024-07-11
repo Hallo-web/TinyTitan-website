@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </button>
                     <div class="expandedContent hidden fixed top-0 left-0 w-full h-screen bg-black bg-opacity-80 text-white flex flex-col justify-center items-center transition-opacity duration-300 ease-in-out">
                         <h1 class="text-3xl mb-4">${title}</h1>
-                        <div class="grid grid-cols-3 gap-4 w-full">
+                        <div class="grid grid-cols-3 gap-6 w-full">
                             ${[1, 2, 3].map(j => {
             const subheadingKey = `subheading${i + 1}_${j}`;
             const contentKey = `content${i + 1}_${j}`;
