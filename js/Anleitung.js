@@ -28,10 +28,20 @@ function createDynamicContent() {
         <div class="bild" id="bild2">
           <img src="./img/testimonial-bg.png" alt="Bild 2">
           <div class="overlay">
-            <span class="textOverImage">Jede Barriere (oder unterschiedliche Farbe) die hinzugefügt wurde repräsentiert ein weiteren PC der dazugeschalten wurde. Mehr Farben -> mehr PCs. Es wird die selbe Leistung erbracht, aber es wird auf mehrere PCs aufgeteilt. Wie Teamwork. Jeder hat eine Aufgabe und wenn man zusammenarbeitet wird man schneller fertig.</span>
+            <span class="textOverImage">
+              <h3>Netzwerk von Computern</h3>
+              <p>Jede Barriere (oder unterschiedliche Farbe) repräsentiert einen weiteren PC im Netzwerk:</p>
+              <ul>
+                <li>Mehr Farben → Mehr PCs</li>
+                <li>Gleiche Gesamtleistung, aber auf mehrere PCs verteilt</li>
+              </ul>
+              <p><strong>Vergleich mit Teamwork:</strong></p>
+              <ul>
+                <li>Jeder PC hat eine spezifische Aufgabe</li>
+                <li>Zusammenarbeit führt zu schnellerer Fertigstellung</li>
+              </ul>
+            </span>
           </div>
-        </div>
-      </div>
     </div>
   `;
 
@@ -120,10 +130,29 @@ function createDynamicContent() {
     }
 
     #bild2 .textOverImage {
-      font-size: 18px;
-      line-height: 1.6;
-      text-align: center;
-    }
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    padding: 15px;
+  }
+
+  #bild2 .textOverImage h3 {
+    color: #ffff00;
+    margin-bottom: 10px;
+  }
+
+  #bild2 .textOverImage p {
+    margin-bottom: 10px;
+  }
+
+  #bild2 .textOverImage ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  #bild2 .textOverImage li {
+    margin-bottom: 5px;
   }
 }`;
   document.head.appendChild(style);
