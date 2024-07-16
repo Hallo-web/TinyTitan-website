@@ -78,10 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
         `;
 
         container.appendChild(squareElement);
-        .prices{
-            margin:10px;
-            display: inline-CSSLayerBlockRule;
-        }
+
 
         const expandButton = squareElement.querySelector('.expandButton');
         const expandedContent = squareElement.querySelector('.expandedContent');
