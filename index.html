@@ -5,14 +5,16 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Tiny Titan</title>
-        <div class="Farbverlauf"></div>
+        
         <!-- Squares requirements -->
         <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
         <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
         
         <!-- Add Squares -->
 
-            <style type="text/tailwindcss">
+            <style type="text/tailwindcss"> body{
+                width: 100%;height: 100vh;padding:0;margin:0; background:linear-gradient(#ffee00,#fff165,#fff59a,#c4cdd2,#58666e)
+            }
                 @layer base {
                     :root {
                         --background: 0 0% 100%;
