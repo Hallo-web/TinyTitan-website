@@ -10,6 +10,7 @@ body {
 body .body {
 	height: 100%;
 }
+.Farbverlauf{background: color #fe0 linear-gradient(fff165) #fff165 ;}
 .cover {
 	position: absolute;
 	width: 100%;
