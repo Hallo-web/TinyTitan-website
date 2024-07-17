@@ -7,114 +7,65 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    // Create and append styles
-    const style = document.createElement('style');
-    style.textContent = `
-        ${containerSelector} {
-            position: relative;
-            height: 600px;
-            overflow: hidden;
-            background: #f0f0f0;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .stack {
-            position: relative;
-            height: 100%;
-            width: 100%;
-        }
-        .stack__card {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            padding: 20px;
-            box-sizing: border-box;
-            transition: all 0.3s ease;
-            background: white;
-            border-radius: 8px;
-            opacity: 0;
-            pointer-events: none;
-        }
-        .stack__card.active {
-            opacity: 1;
-            pointer-events: auto;
-        }
-        .card-title {
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .card-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            width: 100%;
-        }
-        .card-section {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0 10px;
-            text-align: center;
-        }
-        .card-subtitle {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-        .card-explanation {
-            font-size: 1rem;
-        }
-        .nav-arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 40px;
-            height: 40px;
-            background: rgba(0,0,0,0.5);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            z-index: 10;
-        }
-        .nav-arrow-left { left: 10px; }
-        .nav-arrow-right { right: 10px; }
-    `;
-    document.head.appendChild(style);
-
     // Create and append HTML structure
     const stack = document.createElement('div');
     stack.className = 'stack';
 
-    const cardTitles = ['1 Säule', '2 Säule', '3 Säule', '4 Säule', '5 Säule'];
+    const cardData = [
+        {
+            title: '1 Säule',
+            sections: [
+                { subtitle: 'Staatliche Vorsorge', explanation: 'Pflichtversicherung für alle Erwerbstätigen' },
+                { subtitle: 'AHV/IV', explanation: 'Sicherung des Existenzminimums im Alter oder bei Invalidität' },
+                { subtitle: 'Finanzierung', explanation: 'Umlageverfahren: Aktive finanzieren Rentner' }
+            ]
+        },
+        {
+            title: '2 Säule',
+            sections: [
+                { subtitle: 'Berufliche Vorsorge', explanation: 'Obligatorische betriebliche Altersvorsorge' },
+                { subtitle: 'Pensionskasse', explanation: 'Erhaltung des gewohnten Lebensstandards im Alter' },
+                { subtitle: 'Finanzierung', explanation: 'Kapitaldeckungsverfahren: Eigenes Sparkapital wird aufgebaut' }
+            ]
+        },
+        {
+            title: '3 Säule',
+            sections: [
+                { subtitle: 'Private Vorsorge', explanation: 'Freiwillige individuelle Altersvorsorge' },
+                { subtitle: 'Säule 3a und 3b', explanation: '3a: gebunden mit Steuervorteil, 3b: frei verfügbar' },
+                { subtitle: 'Flexibilität', explanation: 'Individuelle Gestaltung nach persönlichen Bedürfnissen' }
+            ]
+        },
+        {
+            title: '4 Säule',
+            sections: [
+                { subtitle: 'Erwerbseinkommen', explanation: 'Teilzeitarbeit oder Nebenjob im Ruhestand' },
+                { subtitle: 'Flexibles Arbeiten', explanation: 'Möglichkeit, Rente mit Einkommen zu ergänzen' },
+                { subtitle: 'Work-Life-Balance', explanation: 'Ausgleich zwischen Arbeit und Freizeit im Alter' }
+            ]
+        },
+        {
+            title: '5 Säule',
+            sections: [
+                { subtitle: 'Immobilien', explanation: 'Wohneigentum als Altersvorsorge' },
+                { subtitle: 'Mieteinnahmen', explanation: 'Zusätzliches Einkommen durch Vermietung' },
+                { subtitle: 'Wertsteigerung', explanation: 'Langfristige Wertsteigerung von Immobilien' }
+            ]
+        }
+    ];
 
-    cardTitles.forEach((title, index) => {
+    cardData.forEach((data, index) => {
         const card = document.createElement('div');
         card.className = 'stack__card';
         card.innerHTML = `
-            <h2 class="card-title">${title}</h2>
+            <h2 class="card-title">${data.title}</h2>
             <div class="card-content">
-                <div class="card-section">
-                    <h3 class="card-subtitle">Untertitel</h3>
-                    <p class="card-explanation">Erklärungen</p>
-                </div>
-                <div class="card-section">
-                    <h3 class="card-subtitle">Untertitel</h3>
-                    <p class="card-explanation">Erklärungen</p>
-                </div>
-                <div class="card-section">
-                    <h3 class="card-subtitle">Untertitel</h3>
-                    <p class="card-explanation">Erklärungen</p>
-                </div>
+                ${data.sections.map(section => `
+                    <div class="card-section">
+                        <h3 class="card-subtitle">${section.subtitle}</h3>
+                        <p class="card-explanation">${section.explanation}</p>
+                    </div>
+                `).join('')}
             </div>
         `;
         stack.appendChild(card);
@@ -138,10 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateCards() {
         cards.forEach((card, index) => {
-            card.classList.remove('active');
-            if (index === currentCardIndex) {
-                card.classList.add('active');
-            }
+            card.style.display = index === currentCardIndex ? 'flex' : 'none';
         });
     }
 
