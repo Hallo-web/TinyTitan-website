@@ -13,43 +13,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const cardData = [
         {
-            title: '1 Säule',
+            title: 'Informatik',
             sections: [
-                { subtitle: 'Staatliche Vorsorge', explanation: 'Pflichtversicherung für alle Erwerbstätigen' },
-                { subtitle: 'AHV/IV', explanation: 'Sicherung des Existenzminimums im Alter oder bei Invalidität' },
-                { subtitle: 'Finanzierung', explanation: 'Umlageverfahren: Aktive finanzieren Rentner' }
+                { subtitle: 'Rechenintensive', explanation: 'Tiny Titan kann für rechenintensive Aufgaben eingesetzt werden, die auf einem einzelnen Raspberry Pi zu lange dauern würden, z. B. Simulationen, KI-Training oder Videobearbeitung.' },
+                { subtitle: 'Datenanalyse', explanation: 'Mit seiner parallelen Verarbeitungsleistung kann Tiny Titan große Datensätze schnell und effizient analysieren, um Muster und Trends zu erkennen.' },
+                { subtitle: 'Steuerungszentrum', explanation: 'Tiny Titan kann als Steuerungszentrum für Roboter und IoT-Geräte eingesetzt werden. Seine Flexibilität ermöglicht die Anpassung an verschiedene Anwendungsfälle.' }
             ]
         },
         {
-            title: '2 Säule',
+            title: 'Informationssysteme',
             sections: [
-                { subtitle: 'Berufliche Vorsorge', explanation: 'Obligatorische betriebliche Altersvorsorge' },
-                { subtitle: 'Pensionskasse', explanation: 'Erhaltung des gewohnten Lebensstandards im Alter' },
-                { subtitle: 'Finanzierung', explanation: 'Kapitaldeckungsverfahren: Eigenes Sparkapital wird aufgebaut' }
+                { subtitle: 'Datenspeicherung und Verwaltung', explanation: 'Tiny Titan kann als dezentraler Datenspeicher verwendet werden, um sensible Daten sicher und redundant zu speichern.' },
+                { subtitle: 'Webserver und Cloud Computing', explanation: 'Tiny Titan kann als Webserver eingesetzt werden, um Websites und Anwendungen bereitzustellen. Er kann auch in Cloud-Computing-Umgebungen integriert werden.' },
+                { subtitle: 'Netzwerkmanagement und -überwachung', explanation: 'Tiny Titan kann zur Überwachung von Netzwerken und zur Identifizierung von Problemen eingesetzt werden.' }
             ]
         },
         {
-            title: '3 Säule',
+            title: 'Programmieren',
             sections: [
-                { subtitle: 'Private Vorsorge', explanation: 'Freiwillige individuelle Altersvorsorge' },
-                { subtitle: 'Säule 3a und 3b', explanation: '3a: gebunden mit Steuervorteil, 3b: frei verfügbar' },
-                { subtitle: 'Flexibilität', explanation: 'Individuelle Gestaltung nach persönlichen Bedürfnissen' }
+                { subtitle: 'Lernplattform', explanation: 'Tiny Titan bietet eine günstige und flexible Plattform zum Erlernen und Üben von Programmiersprachen wie Python, Java oder C++.' },
+                { subtitle: 'Parallele Programmierung', explanation: 'Tiny Titan ermöglicht die Entwicklung und Ausführung von parallelen Programmen, die die Rechenleistung mehrerer Raspberry Pis nutzen.' },
+                { subtitle: 'Fehlerbehebung und Debugging', explanation: 'Tiny Titan kann zur Fehlerbehebung und zum Debugging von Programmen eingesetzt werden, indem die Ausführung auf mehrere Raspberry Pis verteilt wird.' }
             ]
         },
         {
-            title: '4 Säule',
+            title: 'Betriebswirtschaft',
             sections: [
-                { subtitle: 'Erwerbseinkommen', explanation: 'Teilzeitarbeit oder Nebenjob im Ruhestand' },
-                { subtitle: 'Flexibles Arbeiten', explanation: 'Möglichkeit, Rente mit Einkommen zu ergänzen' },
-                { subtitle: 'Work-Life-Balance', explanation: 'Ausgleich zwischen Arbeit und Freizeit im Alter' }
+                { subtitle: 'Simulation von Geschäftsprozessen', explanation: 'Tiny Titan kann zur Simulation von Geschäftsprozessen verwendet werden, um deren Effizienz zu verbessern und mögliche Probleme zu identifizieren.' },
+                { subtitle: 'Datenanalyse für Marketing und Vertrieb', explanation: 'Tiny Titan kann große Datenmengen aus Marketing- und Vertriebskampagnen analysieren, um Kundensegmente zu identifizieren und gezielte Kampagnen zu entwickeln.' },
+                { subtitle: 'Risikobewertung und -management', explanation: 'Tiny Titan kann zur Bewertung und zum Management von Unternehmensrisiken eingesetzt werden, indem große Datenmengen analysiert werden.' }
             ]
         },
         {
-            title: '5 Säule',
+            title: 'Prozessmanagement',
             sections: [
-                { subtitle: 'Immobilien', explanation: 'Wohneigentum als Altersvorsorge' },
-                { subtitle: 'Mieteinnahmen', explanation: 'Zusätzliches Einkommen durch Vermietung' },
-                { subtitle: 'Wertsteigerung', explanation: 'Langfristige Wertsteigerung von Immobilien' }
+                { subtitle: 'Workflow-Automatisierung', explanation: 'Tiny Titan kann zur Automatisierung von Workflows in Unternehmen eingesetzt werden, um die Effizienz und Produktivität zu verbessern.' },
+                { subtitle: 'Lieferkettenoptimierung', explanation: 'Tiny Titan kann zur Optimierung von Lieferketten eingesetzt werden, indem Daten aus verschiedenen Quellen gesammelt und analysiert werden.' },
+                { subtitle: 'Qualitätsmanagement', explanation: 'Tiny Titan kann zur Überwachung und Verbesserung der Qualität von Produkten und Dienstleistungen eingesetzt werden.' }
             ]
         }
     ];
