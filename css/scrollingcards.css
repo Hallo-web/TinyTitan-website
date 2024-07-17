@@ -1,5 +1,6 @@
 html .stack__card{
 	font-family: sans-serif;
+	color: white;
 	box-sizing: border-box;
   }
   *,
@@ -20,18 +21,18 @@ html .stack__card{
 	font-size: 10rem;
   }
   .stack__card:nth-child(1) {
-	background-color: #e3342f;
+	background-color: #00457d;
   }
   .stack__card:nth-child(2) {
-	background-color: #38c172;
+	background-color: #006c8c;
   }
   .stack__card:nth-child(3) {
-	background-color: #3490dc;
+	background-color: #453c74;
   }
   .stack__card:nth-child(4) {
-	background-color: #f66d9b;
+	background-color: #951d56;
   }
   .stack__card:nth-child(5) {
-	background-color: #f6993f;
+	background-color: #e3680f;
   }
   
